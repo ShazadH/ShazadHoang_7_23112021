@@ -1,0 +1,48 @@
+body {
+    margin: 1rem 2rem 0 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    height: 8rem;
+}
+
+.search form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e3e3;
+    border: none;
+    height: 4rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    height: 100%;
+    width: 95%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    outline: none;
+    border: none;
+    background-color: #e3e3e3;
+}
+
+.search i {
+    font-size: 2rem;
+}

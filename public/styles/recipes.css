@@ -1,0 +1,35 @@
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+
+.recipes__card {
+    width: 30%;
+    border: 2px solid green;
+    margin-bottom: 2rem;
+}
+
+.recipes__card__image {
+    height: 10rem;
+    width: 100%;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.recipes__card__infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__infos__titleDiv {
+    display: flex;
+    justify-content: space-between;
+    line-height: 16px;
+    font-size: 0.9rem;
+}
+
+.titleDiv__title {
+}
