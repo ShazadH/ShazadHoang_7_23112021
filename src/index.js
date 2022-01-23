@@ -62,7 +62,7 @@ for (let i = 0; i < recipes.length; i++) {
     recipeinfos.className = "recipes__card__infos";
     recipeTitleDiv.className = "card__infos__titleDiv";
     recipeTitle.className = "titleDiv__title";
-    logoTime.className = "titleDiv__logo";
+    logoTime.className = "titleDiv__logo far fa-clock";
     textTime.className = "titleDiv__text";
     recipeBody.className = "recipeBody";
     recipeIngredients.className = "recipeIngredients";
@@ -80,14 +80,15 @@ for (let i = 0; i < recipes.length; i++) {
     recipeBody.append(recipeDescription);
 
     recipeTitle.innerText = recipes[i].name;
-    textTime.innerText = recipes[i].time;
+    textTime.innerText = `${recipes[i].time} min`;
+    recipeDescription.innerText = recipes[i].description;
 
     console.log(recipes[i].ingredients.forEach((x) => console.log("hello")));
     recipes[i].ingredients.forEach((ingredient) => {
         const unit = (unit) => {
             switch (unit) {
                 case "cuillères à soupe":
-                    return "cuillères";
+                    return " cuillères";
                     break;
                 case "grammes":
                     return "g";
@@ -99,9 +100,9 @@ for (let i = 0; i < recipes.length; i++) {
         // console.log(ingredient);
         const recipeItem = document.createElement("p");
         recipeIngredients.append(recipeItem);
-        recipeItem.innerText = `${ingredient.ingredient} ${
+        recipeItem.innerText = `${ingredient.ingredient}${
             ingredient.quantity ? `: ${ingredient.quantity}` : ""
-        } ${ingredient?.unit ? unit(ingredient.unit) : ""}`;
+        }${ingredient?.unit ? unit(ingredient.unit) : ""}`;
     });
 
     // console.log(recipes[0].ingredients.ingredient);

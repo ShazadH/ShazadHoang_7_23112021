@@ -3,33 +3,71 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
-    border: 2px solid black;
+    width: 100%;
 }
 
 .recipes__card {
-    width: 30%;
-    border: 2px solid green;
+    width: 31%;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
 }
 
 .recipes__card__image {
     height: 10rem;
     width: 100%;
-    background-color: gray;
-    border: 2px solid black;
+    background-color: #8b939a;
 }
 
 .recipes__card__infos {
     display: flex;
     flex-direction: column;
+    background-color: #e3e3e3;
+    padding: 0.5rem;
 }
 
 .card__infos__titleDiv {
     display: flex;
-    justify-content: space-between;
     line-height: 16px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .titleDiv__title {
+    display: block;
+    flex: 1;
+}
+
+.titleDiv__logo {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.titleDiv__text {
+    font-weight: bold;
+}
+
+.recipeBody {
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+}
+
+.recipesIngredients {
+    width: 50%;
+    font-size: 0.7rem;
+}
+
+p {
+    font-size: 0.7rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.recipeDescription {
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    font-size: 0.7rem;
 }
