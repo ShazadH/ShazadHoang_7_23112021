@@ -15,7 +15,7 @@
         />
         <link rel="stylesheet" href="./public/styles/style.css" />
         <link rel="stylesheet" href="./public/styles/recipes.css" />
-        <title>Hello, world!</title>
+        <title>Les Petits Plats</title>
     </head>
     <body>
         <div class="container">
@@ -27,10 +27,14 @@
             <div class="search">
                 <form action="">
                     <input
+                        id="searchBarInput"
                         type="text"
                         placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"
                     />
-                    <button type="submit"><i class="fas fa-search"></i></button>
+
+                    <button id="searchButton" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
             <!-- Filters -->

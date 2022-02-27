@@ -1,14 +1,13 @@
 .recipes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
     margin-top: 2rem;
     width: 100%;
 }
 
 .recipes__card {
-    width: 31%;
-    margin-bottom: 2rem;
     border-radius: 0.5rem;
 }
 
